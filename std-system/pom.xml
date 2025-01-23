@@ -1,0 +1,29 @@
+<project xmlns="https://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>std-system</artifactId>
+	<name>std-system</name>
+	<description>Test</description>
+	<packaging>war</packaging>
+
+	<parent>
+		<groupId>com.amstech</groupId>
+		<artifactId>collage-erp</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<webXml>webapp/WEB-INF/web.xml</webXml>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
